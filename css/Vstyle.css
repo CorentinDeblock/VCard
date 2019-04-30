@@ -1,33 +1,12 @@
-@media screen and (min-width:1040px){
-    footer article{
-        display:grid;
-        grid-template-columns: 3fr 3fr 3fr;
-        margin:auto;
-        font-size:23px;
-        color:#818181;
-    }
-    body{
-        grid-template-areas: "as as"
-                            "as as"
-                            "m f";
-    }
-}
 
+.content p {
+    margin-bottom:0;
+}
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    position: fixed;
     margin:0;
-    display:grid;
-    grid-template-areas: "as as"
-                        "f f"
-                        "m m"
-                        "f f";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0px 1fr 55%;
-    height: 100%;
-    width: 100%;
 }
 .content-prog{
     display:grid;
@@ -87,15 +66,15 @@ body{
     text-align: center;
 }
 .reseau{
-    position: sticky;
+    position: fixed;
+    color:grey;
     top:0%;
     float: left;
     background-image: linear-gradient(20deg,#e1e1e1,#f1f1f1);
     border: 1px solid white;
-    font-size:42px;
-    padding:15px;
     margin:auto;
     text-align: center;
+    font-size:25px; 
 }
 .reseau a{
     color:#515151;
@@ -111,12 +90,13 @@ body{
 }
 .reseau p {
     margin:0;
-    font-size:20px;
+    font-size:14px;
 }
 aside{
     grid-area: as;
     background: linear-gradient(transparent,black), url("../Image/VcardBackground.jpg") no-repeat center;
     text-align: center;
+    color:white;
 }
 .card{
     background-color: #e9e9e9;
@@ -158,10 +138,7 @@ footer section p {
     margin:10px;
 }
 .content{
-    position: sticky;
-    top:11%;
     text-align: center;
-    color:white;
 }
 footer{
     overflow-y: scroll;
@@ -209,5 +186,37 @@ footer{
         width:0%;
     }to{
         width:attr(width);
+    }
+}
+
+@media screen and (min-width:1040px){
+    body{
+        display:grid;
+        grid-template-areas: "as as"
+                             "as as"
+                             "m f";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 0px 1fr 55%;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
+    footer article{
+        display:grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        margin:auto;
+        font-size:23px;
+        color:#818181;
+    }
+    .reseau{
+        padding:15px;
+        font-size:42px;
+    }
+    .reseau p{
+        font-size:20px;
+    }
+    .content{
+        position: sticky;
+        top:11%;
     }
 }
