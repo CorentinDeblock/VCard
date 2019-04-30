@@ -6,7 +6,13 @@
         font-size:23px;
         color:#818181;
     }
+    body{
+        grid-template-areas: "as as"
+                            "as as"
+                            "m f";
+    }
 }
+
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -15,8 +21,9 @@ body{
     margin:0;
     display:grid;
     grid-template-areas: "as as"
-                         "as as"
-                         "m f";
+                        "f f"
+                        "m m"
+                        "f f";
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 0px 1fr 55%;
     height: 100%;
