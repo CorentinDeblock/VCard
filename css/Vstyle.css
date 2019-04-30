@@ -129,6 +129,16 @@ footer section{
 footer article h2{
     font-size:23px;
 }
+footer article, .email{
+    color:#818181;
+}
+.email a {
+    text-decoration: none;
+    color:#273421;
+}
+.email a:hover {
+    color: red;
+}
 footer section img{
     width: 150px;
     height: 150px;
@@ -205,8 +215,9 @@ footer{
         display:grid;
         grid-template-columns: 3fr 3fr 3fr;
         margin:auto;
+    }
+    footer article, .email{
         font-size:23px;
-        color:#818181;
     }
     .reseau{
         padding:15px;
