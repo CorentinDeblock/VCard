@@ -1,3 +1,12 @@
+@media screen and (min-width:1040px){
+    footer article{
+        display:grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        margin:auto;
+        font-size:23px;
+        color:#818181;
+    }
+}
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -101,13 +110,12 @@ aside{
     grid-area: as;
     background: linear-gradient(transparent,black), url("../Image/VcardBackground.jpg") no-repeat center;
     text-align: center;
-    color:white;
 }
 .card{
     background-color: #e9e9e9;
     margin:10px;
     padding:5px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .icon{
     display:flex;
@@ -131,13 +139,6 @@ footer section{
     color:red;
     font-size:30px;
 }
-footer article{
-    display:grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    margin:auto;
-    font-size:23px;
-    color:#818181;
-}
 footer article h2{
     font-size:23px;
 }
@@ -153,6 +154,7 @@ footer section p {
     position: sticky;
     top:11%;
     text-align: center;
+    color:white;
 }
 footer{
     overflow-y: scroll;
