@@ -3,10 +3,13 @@
     margin-bottom:0;
 }
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Nanum Gothic',sans-serif;
 }
 body{
     margin:0;
+}
+.Vcontent{
+    margin-top:40px;
 }
 .content-prog{
     display:grid;
@@ -227,7 +230,9 @@ footer{
         font-size:20px;
     }
     .content{
-        position: sticky;
-        top:11%;
+        position: relative;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
     }
 }
